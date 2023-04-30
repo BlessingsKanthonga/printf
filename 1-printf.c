@@ -34,7 +34,7 @@ int _printf(const char *format, ...)
 			}
 			else if (*format == 's')
 			{
-				*s = va_arg(args, char *);
+				s = va_arg(args, char *);
 				
 				while (*s != '\0')
 				{
